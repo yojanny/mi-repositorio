@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Listas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Desordenadas</h2>
+            <!-- unordered list -->
+            <p>El orden no importa
+                (pero tampoco va a cambiar)</p>
+                <ul>
+                    <!-- List item -->
+                    <li>Elemento 1 (puede ser 
+                        cualquier cosa)</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Ordenadas</h2>
+            <!--ordered list-->
+            <p>El orden importa.
+                Tambien es informacion</p>
+                <ol>
+                    <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>...</li>
+                </ol>
+        </section>
+        <section>
+            <h2>Anidadas</h2>
+        <p>ul y ol pueden ser descendientes de li, 
+            para crear listas anidades.
+            se pueden combinar como queramos</p>
+
+            <ul>
+                <li>
+                    <h3>Elemento 1</h3>
+                </li>
+                <ul>
+                    <li>Subelemento 1 </li>
+                    <li>Subelemento 2</li>
+                    <li>
+                        <h3>ELEMENTO 2</h3>
+                        <OL>
+                            <li>subelemento 1</li>
+                        </OL>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <h2>Lista de definiciones</h2>
+            <!-- description list -->
+            <p>para definiciones o descripciones de terminos</p>
+
+            <dl>
+                <!-- description term -->
+                <dt>HTML</dt>
+                <!-- description details -->
+                <dd>Lenguaje de marcado de hipertexto, creado para compartir
+                    documentacion en el CERN</dd>
+
+                    <dt>HTTP</dt>
+                    <dd>Protocolo de transferencia de hipertxto,
+                        creado para evitar a traves de la red documentos HTML</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Ejemplo</h2>
+        </section>
+        <article>
+            <header>
+                <h2>Tortillla de patatas</h2>
+            </header>
+
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>patata</li>
+                <li>huevos</li>
+                <li>cebolla (opcional)</li>
+                <li>Ajo (opcional)</li>
+                <li>sal</li>
+            </ul>
+            
+            <h3>Instrucciones</h3>
+            <ol>
+                <li>cortar las patatas</li>
+                <li>freir las patatas</li>
+                <li>escurrir y añadir huevo batido</li>
+                <li>cocinar un poquito por lado</li>
+                <li>servir</li>
+            </ol>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE  html>
+<html>
+  <head>
+    <title>Más formularios...</title>
+  </head>
+  <body>
+    <header>
+      <h1>Más formularios...</h1>
+
+    </header>
+    <form action="#" method="GET" id="id-form">
+
+      <!-- Los campos de un formulario se pueden estructurar en fieldsets -->
+      <fieldset>
+        <!-- La etiqueta legend, sirve para describir el fieldset -->
+        <legend>Datos de login</legend>
+
+        <ul>
+          <li>
+            <label for="user">Nombre de usuario</label>
+            <input type="text" id="user" name="user">
+          </li>
+          <li>
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" name="pass">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <ul>
+          <li>
+            <label for="dob">Fecha de nacimiento</label>
+            <input type="date" id="dob" name="dob">
+          </li>
+          <li>
+            <label for="prov">Provincia
+
+            </label>
+            <select name="prov" id="prov">
+              <option value="15">A Coruña</option>
+              <option value="17">Lugo</option>
+              <option value="16">Pontevedra</option>
+              <option value="18">Ourense</option>
+            </select>
+          </li>
+          <li>
+            <fieldset>
+              <legend>Género</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="gender" id="man" value="man">
+                  <label for="man">Hombre</label>
+                </li>
+                <li>
+                  <input type="radio" name="gender" id="woman" value="woman">
+                  <label for="woman">Mujer</label>
+                </li>
+                <li>
+                  <input type="radio" name="gender" id="other" value="other">
+                  <label for="other">Otro/NC</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Atributos comunes</legend>
+              <ul>
+                <li>
+
+                  <!-- Value establece un valor por defecto -->
+                  <label for="value">Value</label>
+                  <input type="text" name="value" id="value" value="Test">
+                </li>
+                <li>
+                  <!-- Placeholder muestra un texto de "ayuda" -->
+                  <label for="place">Placeholder</label>
+                  <input type="text" placeholder="Escribe aqui...">
+                </li>
+                <li>
+                  <!-- Campo obligatorio -->
+                  <label for="req">Required</label>
+                  <input type="text" required>
+                </li>
+                <li>
+                  <!-- Parece un campo normal y se envia, pero no se puede modificar -->
+                  <label for="">Readonly</label>
+                  <input type="text" value="hola" readonly>
+                </li>
+                <li>
+                  <!-- Deshabilitado. Ni se puede editar ni se envia -->
+                  <!-- Sirve para "apagar" botones -->
+                  <label for="">Disabled</label>
+                  <input type="text" disabled>
+
+                </li>
+                <li>
+                  <!-- Se selecciona automáticamente -->
+                  <label for="">Autofocus</label>
+                  <input type="text" autofocus>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+        </ul>
+      </fieldset>
+      <button>Enviar</button>
+    </form>
+    <button type="reset" form="id-form">reset</button>
+  </body>
+</html>

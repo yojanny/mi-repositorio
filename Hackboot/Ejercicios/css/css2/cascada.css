@@ -1,0 +1,54 @@
+/*importancia (!important) es lo que mas pesa le gana a TOFO*/
+/*se aplica a reglas*/
+h1{
+    color: blueviolet !important;
+    
+}
+
+
+
+/*Especificidad*/
+/*Los segundo que mas importa*/
+/*primero se compara el numero mas a la izquierda y gana el mas alto. en caso*/
+/* Las etiquetas = 1 */
+
+ul {
+    list-style: circle;
+}  
+
+li{
+    color: blue;
+} /* clases, pseudo-clases=1,0*/
+
+.especial{
+    color:blue;
+}
+:first-child, li:nth-of-type(3){
+    color:magenta;
+    font-size: 1.2rem;
+}
+
+.especial{
+    color:blueviolet;
+}
+
+
+/* ID = 1, 0, 0*/
+
+#unico{
+    color: red;
+}
+#ultimo{
+    color:black;
+    text-decoration: line-through;
+}
+
+#lista :last-child {
+    color: green;
+}
+/* lo menos importante es la cascada*/
+/*Siempre que coincidan en importancia y especificidad, se aplica el de mas abajo*/
+
+ul{
+    list-style: square;
+}

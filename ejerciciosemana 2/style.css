@@ -1,0 +1,54 @@
+*{
+
+    margin: 0.5rem;
+}
+.lista{
+    display: inline-flex;
+    list-style: none;
+}
+
+li:nth-child(odd){
+    text-decoration:underline green;
+}
+
+li:nth-child(6){
+    background-color: blue;
+}
+ul#provincias{
+    list-style-type: lower-roman;
+}
+li:nth-child(2){
+    list-style: none;
+}
+:lang(en){
+    font-size: 30px;
+}
+
+.lista li:nth-child(1){
+    list-style-type: "😁";
+    margin-left: 2rem;
+}
+.lista li:nth-child(2){
+    list-style-type: "😃";
+    margin-left: 2rem;
+}
+
+.lista li:nth-child(3) {
+    list-style-type: "🤣";
+    margin-left: 2rem;
+}
+
+.lista li:nth-child(4) {
+    list-style-type: "🙃";
+    margin-left: 2rem;
+}
+
+.lista li:nth-child(5) {
+    list-style-type: "😻";
+    margin-left: 2rem;
+}
+
+.lista li:nth-child(6) {
+    list-style-type: "➡️";
+    margin-left: 2rem;
+}

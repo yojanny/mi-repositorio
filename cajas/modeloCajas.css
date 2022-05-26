@@ -1,0 +1,70 @@
+
+*{
+    /*Para que las dimensiones sean las que le digo, a pesar del padding*/
+    box-sizing: border-box;
+}
+
+
+/* Cajas de Bloque*/
+/* Ocupan el alto que necesita el contenido suelen tener margenes  
+podemos modificar sus dimensiones,su margen y su padding*/
+
+p{
+    border: 1px solid blue;
+    width: 15rem;
+    height: 10rem;
+    padding: 2rem;
+
+}
+
+/*Caja de LINEA*/
+/* No podemos modificar sus dimensiones. 
+solo pueden tener maargen horizontal.
+
+pueden tener padding, pero solo desplaza a otros elementos en horizontal (en vertical, solo afecta
+al borde, que se superpone a los otros elementos*/
+strong{
+    border: 1px solid red;
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    padding: 1rem;
+
+}
+/*Cajas de INLINE-BLOCK*/
+/*Combinan lo mejor de las cajas de linea con lo mejor de las bloque
+
+pueden tener elementos a los lados pero a la vez podemos manipularlas*/
+
+li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid blueviolet;
+    padding: 0.5rem;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+
+}
+/* Podemos modificar el comportamientp por defecto;
+hacer que elementos de bloque tengan cajas de lia y viceversa*/
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px outset gray;
+    padding: 1rem 0.5rem;
+    margin: 1rem auto;
+    background-color: gray;
+    width: fit-content;
+}
+
+li:nth-child(3){
+    height: 12rem;
+}
+
+input:first-of-type{
+    padding: 0.2rem;
+    padding: 0.5rem;
+}

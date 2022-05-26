@@ -1,0 +1,46 @@
+h1{
+    color: blue;
+    transition: color 1s;
+}
+h1:hover{
+    color:blueviolet;
+}
+p{
+    transition: opacity 1s;
+}
+
+html:hover p{
+    opacity: 0;
+}
+div{
+    border: 1px solid black;
+    height: 5rem;
+    width: 10rem;
+    background-color: lightblue;
+   /* transition: transform 500ms;*/
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay: 500ms;
+
+
+
+
+    transform-origin: bottom right;
+}
+
+
+
+header:hover ~ main div{
+    background-color: lightgreen;
+    transform: rotate(-330deg);
+}
+
+article{
+    border: 1px solid blue;
+    width: 15rem;
+    height: 10rem;
+    background-color: blue;
+
+    transition-property:
+    background-color, transform;
+}

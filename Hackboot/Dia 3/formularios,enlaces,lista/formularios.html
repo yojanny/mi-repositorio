@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <form>
+      <!-- EL elemento principal es el input -->
+      <!-- Por defecto, es tipo text -->
+      <input/>
+
+      <!-- Suelen ir acompañados de la etiqueta label, asociada con la atributo for (igual que el id) -->
+      <label for="texto">Tipo texto:</label>
+      <input type="text" name="texto" id="texto"/>
+
+    <ul>
+      <li>
+        <label for="pass">Tipo password</label>
+        <!-- EL tipo contraseña sale censurado -->
+        <input type="password" id="pass" name="password">
+      </li>
+      <li>
+        <label for="email">Tipo email</label>
+        <!-- Comprueba que tenga formato correcto (que tenga una @ por el medio) -->
+        <input type="email" name="email" id="email">
+      </li>
+      <li>
+        <label for="url">Tipo url</label>
+        <!-- Comprueba que es una url (empieza por http:// o https://) -->
+        <input type="url" name="url" id="url">
+      </li>
+      <li>
+        <label for="tlf">Tipo tel</label>
+        <!-- En dispositivos móviles, abre el teclado numérico y normalmente, acceso a la agenda -->
+        <input type="tel" id="tlf" name="phone">
+      </li>
+      <li>
+        <!-- Checkbox. Se puede marcar o desmarcar. Son siempre independientes -->
+        <ul>
+          <li>
+            <input type="checkbox" name="check1" id="check1">
+            <label for="check1">Checkbox 1</label>
+          </li>
+          <li>
+            <input type="checkbox" name="check2" id="check2">
+            <label for="check2">Checkbox 2</label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <!-- Radio. Solo se pude marcar uno dentro del mismo "campo". No se puede desmarcar. Se conectan por el name -->
+        <!-- Tienen que tener value, porque es lo que se envia -->
+        <ul>
+          <li>
+            <input type="radio" name="radio" id="radio1" value="1">
+            <label for="radio1">Radio 1</label>
+          </li>
+          <li>
+            <input type="radio" name="radio" id="radio2" value="2">
+            <label for="radio2">Radio 2</label>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <label for="date">Tipo date</label>
+        <input type="date" id="date"  name="date">
+      </li>
+      <li>
+        <label for="color">Tipo color</label>
+        <input type="color" name="color" id="color">
+      </li>
+      <li>
+        <label for="range">tipo range</label>
+        <input type="range" id="range"  name="range" min="0" max="10" step="5">
+      </li>
+      <li>
+        <label for="area">Textarea</label>
+        <textarea name="area" id="area" cols="30" rows="1"></textarea>
+      </li>
+      <li>
+        <label for="select">Select</label>
+        <select name="select" id="select">
+          <option>Opcción 1</option>
+          <option value="2">Opción 2</option>
+        </select>
+      </li>
+    </ul>
+
+    <!-- Un botón dentro de un form, por defecto es type submit, envia el form -->
+    <button type="submit">Enviar</button>
+
+    <!-- Un botón fuera de un form, por defecto es type button. No hace nada. -->
+    <button type="button">Click!</button>
+
+    <!-- Un botón type reset en un form, limpia el formulario -->
+    <button type="reset">Limpiar</button>
+    </form>
+  </body>
+</html>

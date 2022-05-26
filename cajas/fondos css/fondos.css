@@ -1,0 +1,71 @@
+div{
+    border: 1px solid black;
+    height: 15rem;
+    width: 15rem;
+    margin: 3rem 0;
+  }
+  
+  div:nth-child(1){
+    background-color: aqua;
+  }
+  
+  
+  div:nth-child(2){
+    background-image: url(http://source.unsplash.com/random);
+  }
+  
+  
+  div:nth-child(3){
+    /* Si se usa una imagen, es una buena práctica poner también un color, por si falla */
+    background-image: url(http://source.unsplash.com/random);
+    background-color: aquamarine;
+  }
+  
+  div:nth-child(4){
+    /* SI la imagen es muy pequeña, por defecto se repite */
+    background: url(http://source.unsplash.com/100x100) /* no-repeat center */;
+  }
+  
+  div:nth-child(5){
+    background: url(http://source.unsplash.com/100x100);
+  
+    /* Para que no se repita:*/
+    background-repeat: no-repeat;
+  
+    /* Para posicionarlo */
+    background-position: center 120px;
+  }
+  
+  div:nth-child(6){
+    background: url(http://source.unsplash.com/100x100);
+  
+    /* Cambiar el tamaño */
+    background-size: 150px 50px;
+  }
+  
+  div:nth-child(7){
+    background: url(https://areajugones.sport.es/wp-content/uploads/2021/06/pikachu-pokemon.jpeg);
+  
+    /* Cover: Muestra todo lo que puede de la imagen sin dejar huecos ni deformarla */
+    background-size: cover;
+  
+    /* Siempre que la imagen se sale, también podemos usar position */
+    background-position: center;
+  }
+  
+  div:nth-child(8){
+    
+    /* Contain: Muestra toda la imagen encajandola en el contenedor. Si no tiene la misma proporción quedan huecos. NUNCA la deforma   */
+    background-size: contain;
+    
+    /* Se pude combinar con repeat */
+    background-repeat: no-repeat;
+    
+    
+    background-position: center;
+  
+    /* Si por lo que sea tengo que definir la imagen más abajo, NO puedo usar la abreviatura */
+    background-image: url(https://areajugones.sport.es/wp-content/uploads/2021/06/pikachu-pokemon.jpeg);
+  }
+  
+  

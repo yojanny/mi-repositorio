@@ -1,0 +1,74 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');*/
+
+h1{
+    background-color: #006efff3;
+    color: white;
+    margin: 0rem;
+    padding: 5px;
+    text-align: center;
+    text-decoration: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+h2{ 
+    display: block;
+    font-size: 1.5em;
+    margin: 2rem;
+    font-weight: bold;
+    color: #006efff3;
+}
+
+li{
+    margin: 0.5rem;
+    padding: 2px;
+    list-style-type: circle;
+    
+}
+
+li.importante{
+
+font-weight: bold;
+text-decoration: underline;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table{
+    margin: 3rem;
+}
+th, td, tr{
+   
+  
+    margin: 5rem;
+    width: 5rem;
+    height: 1rem;
+    padding: 1rem;
+    
+}
+thead{
+    
+    color: white;
+    background-color: rgb(27, 107, 255);
+}
+/*td:nth-child(3){
+    background-color: rgb(165, 208, 233);
+}
+*/
+
+
+tbody{
+    margin: 5rem auto;
+    padding: 5px;
+    background-color: rgb(103, 173, 219);
+}
+td{
+    background-color:  rgb(123, 174, 241);
+}
+th{
+    background-color:rgb(26, 121, 230);
+}
+#descanso{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(198, 243, 228);
+}

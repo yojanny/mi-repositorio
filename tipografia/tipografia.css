@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+h1{
+    font-family: serif;
+}
+#generica{
+    font-family: monospace;
+}
+#local{
+    /*deberia llevar al menos una tipografia generia, por si acaso*/
+    /*si el nombre tiene espacios, tiene que ir entre comillas*/
+    font-family: 'Courier New';
+
+}
+#backup{
+    font-family: calibri, Arial, Helvetica, sans-serif;
+}
+#externa{
+    font-family: Montserrat;
+}

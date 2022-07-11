@@ -46,7 +46,7 @@ const puntuaciones = [
 ];
 
 function totalPuntos(lista){
-    var caja = [];
+    let caja = [];
     for(let i = 0; i < lista.length; i++){
         let puntos = lista[i].puntos;
         let resultado = puntos.reduce(function (a,b) {

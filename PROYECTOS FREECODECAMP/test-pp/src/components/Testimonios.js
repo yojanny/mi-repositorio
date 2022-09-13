@@ -1,6 +1,6 @@
 
 import React from "react";
-import '../hojas-de-estilos/Testimonio.css';
+import '../Hojas-de-estilos/Testimonio.css';
 
 function Testimonio(props) {
 return(
@@ -9,7 +9,7 @@ return(
   
   <img className="imagen-testimonio"
    src={require(`../imagenes/testimonio-${props.imagen}.png`)}
-   alt="foto de Emma"/>
+   alt="foto de Emma" />
    
 
    {/* trabajanmos con las props pasandolas al contenido principal */}
